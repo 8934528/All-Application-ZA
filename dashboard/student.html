@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - All Application ZA</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container flex-between">
+            <a href="../index.html" class="logo">
+                <span>All</span>
+                <span>Application</span>
+                <span>ZA</span>
+            </a>
+            <nav class="user-nav">
+                <div class="user-profile">
+                    <img src="../images/avatar-placeholder.png" alt="User Avatar" class="avatar">
+                    <span class="username">John Doe</span>
+                </div>
+                <button class="btn btn-danger">Logout</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Dashboard Layout -->
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="#">
+                            <i class="icon-dashboard"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-application"></i>
+                            <span>My Applications</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-university"></i>
+                            <span>Browse Universities</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-documents"></i>
+                            <span>My Documents</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-settings"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-content">
+            <div class="dashboard-header">
+                <h1>Student Dashboard</h1>
+                <div class="dashboard-actions">
+                    <a href="../universities/view.html" class="btn btn-primary">Apply to University</a>
+                </div>
+            </div>
+
+            <!-- Dashboard Widgets -->
+            <div class="dashboard-widgets">
+                <!-- Application Status Widget -->
+                <div class="widget">
+                    <div class="widget-header">
+                        <h3>Application Status</h3>
+                    </div>
+                    <div class="widget-body">
+                        <div class="status-card status-pending">
+                            <h4>University of Cape Town</h4>
+                            <p>Bachelor of Science</p>
+                            <div class="status-badge">Pending Review</div>
+                        </div>
+                        <div class="status-card status-accepted">
+                            <h4>University of Johannesburg</h4>
+                            <p>Bachelor of Commerce</p>
+                            <div class="status-badge">Accepted</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documents Widget -->
+                <div class="widget">
+                    <div class="widget-header">
+                        <h3>My Documents</h3>
+                        <button class="btn btn-secondary btn-sm">Upload</button>
+                    </div>
+                    <div class="widget-body">
+                        <ul class="documents-list">
+                            <li>
+                                <i class="icon-file"></i>
+                                <span>ID Document.pdf</span>
+                                <span class="doc-status verified">Verified</span>
+                            </li>
+                            <li>
+                                <i class="icon-file"></i>
+                                <span>Matric Certificate.pdf</span>
+                                <span class="doc-status pending">Pending</span>
+                            </li>
+                            <li>
+                                <i class="icon-file"></i>
+                                <span>Transcript.pdf</span>
+                                <span class="doc-status missing">Missing</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Deadlines Widget -->
+                <div class="widget">
+                    <div class="widget-header">
+                        <h3>Upcoming Deadlines</h3>
+                    </div>
+                    <div class="widget-body">
+                        <div class="deadline-item">
+                            <div class="deadline-date">
+                                <span class="day">15</span>
+                                <span class="month">Aug</span>
+                            </div>
+                            <div class="deadline-details">
+                                <h4>University of Pretoria</h4>
+                                <p>Bachelor of Engineering</p>
+                            </div>
+                        </div>
+                        <div class="deadline-item">
+                            <div class="deadline-date">
+                                <span class="day">30</span>
+                                <span class="month">Sep</span>
+                            </div>
+                            <div class="deadline-details">
+                                <h4>Stellenbosch University</h4>
+                                <p>Bachelor of Medicine</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 All Application ZA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>

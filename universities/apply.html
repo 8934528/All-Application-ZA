@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply to University - All Application ZA</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="css/universities.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container flex-between">
+            <a href="../index.html" class="logo">
+                <span>All</span>
+                <span>Application</span>
+                <span>ZA</span>
+            </a>
+            <nav class="user-nav">
+                <div class="user-profile">
+                    <img src="../images/avatar-placeholder.png" alt="User Avatar" class="avatar">
+                    <span class="username">John Doe</span>
+                </div>
+                <button class="btn btn-danger">Logout</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="application-container">
+        <div class="container">
+            <div class="application-header">
+                <h1>Apply to <span id="university-name">University of Cape Town</span></h1>
+                <div class="application-progress">
+                    <div class="progress-step active">
+                        <span class="step-number">1</span>
+                        <span class="step-label">Course Selection</span>
+                    </div>
+                    <div class="progress-step">
+                        <span class="step-number">2</span>
+                        <span class="step-label">Personal Details</span>
+                    </div>
+                    <div class="progress-step">
+                        <span class="step-number">3</span>
+                        <span class="step-label">Documents</span>
+                    </div>
+                    <div class="progress-step">
+                        <span class="step-number">4</span>
+                        <span class="step-label">Review & Submit</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Application Form -->
+            <form id="application-form" class="application-form">
+                <!-- Step 1: Course Selection -->
+                <div class="form-step active" data-step="1">
+                    <h2>Select Your Course</h2>
+                    <div class="courses-list">
+                        <!-- Courses will be loaded here -->
+                        <div class="course-option">
+                            <input type="radio" id="course-1" name="course" value="1" required>
+                            <label for="course-1">
+                                <h3>Bachelor of Science</h3>
+                                <p><strong>Duration:</strong> 3 years</p>
+                                <p><strong>Requirements:</strong> APS 42, Mathematics 70%</p>
+                                <div class="course-description">
+                                    <p>This degree provides a broad foundation in science with specialization options in various fields.</p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="course-option">
+                            <input type="radio" id="course-2" name="course" value="2">
+                            <label for="course-2">
+                                <h3>Bachelor of Commerce</h3>
+                                <p><strong>Duration:</strong> 3 years</p>
+                                <p><strong>Requirements:</strong> APS 40, Mathematics 60%</p>
+                                <div class="course-description">
+                                    <p>Prepares students for careers in business, finance, and management.</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary">Cancel</button>
+                        <button type="button" class="btn btn-primary next-step">Next</button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Personal Details -->
+                <div class="form-step" data-step="2">
+                    <h2>Personal Details</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" name="full-name" value="John Doe" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="id-number">ID Number</label>
+                            <input type="text" id="id-number" name="id-number" value="1234567890123" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" value="john@example.com" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Physical Address</label>
+                            <textarea id="address" name="address" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary prev-step">Previous</button>
+                        <button type="button" class="btn btn-primary next-step">Next</button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Documents -->
+                <div class="form-step" data-step="3">
+                    <h2>Required Documents</h2>
+                    <p>Please upload the following documents for your application:</p>
+                    
+                    <div class="documents-required">
+                        <div class="document-item">
+                            <h3>ID Document</h3>
+                            <p>Certified copy of your ID or passport</p>
+                            <div class="document-upload">
+                                <input type="file" id="id-document" accept=".pdf,.jpg,.png">
+                                <label for="id-document" class="btn btn-secondary">Upload</label>
+                                <span class="upload-status">Not uploaded</span>
+                            </div>
+                        </div>
+                        <div class="document-item">
+                            <h3>Academic Transcript</h3>
+                            <p>Your most recent academic results</p>
+                            <div class="document-upload">
+                                <input type="file" id="transcript" accept=".pdf,.jpg,.png">
+                                <label for="transcript" class="btn btn-secondary">Upload</label>
+                                <span class="upload-status">Not uploaded</span>
+                            </div>
+                        </div>
+                        <div class="document-item">
+                            <h3>Proof of Payment</h3>
+                            <p>Application fee payment receipt</p>
+                            <div class="document-upload">
+                                <input type="file" id="payment-proof" accept=".pdf,.jpg,.png">
+                                <label for="payment-proof" class="btn btn-secondary">Upload</label>
+                                <span class="upload-status">Not uploaded</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary prev-step">Previous</button>
+                        <button type="button" class="btn btn-primary next-step">Next</button>
+                    </div>
+                </div>
+
+                <!-- Step 4: Review & Submit -->
+                <div class="form-step" data-step="4">
+                    <h2>Review Your Application</h2>
+                    <div class="review-section">
+                        <h3>Course Details</h3>
+                        <div class="review-item">
+                            <strong>University:</strong>
+                            <span id="review-university">University of Cape Town</span>
+                        </div>
+                        <div class="review-item">
+                            <strong>Selected Course:</strong>
+                            <span id="review-course">Bachelor of Science</span>
+                        </div>
+                    </div>
+                    
+                    <div class="review-section">
+                        <h3>Personal Information</h3>
+                        <div class="review-item">
+                            <strong>Full Name:</strong>
+                            <span id="review-fullname">John Doe</span>
+                        </div>
+                        <div class="review-item">
+                            <strong>Contact Details:</strong>
+                            <span id="review-contact">john@example.com | +27 12 345 6789</span>
+                        </div>
+                    </div>
+                    
+                    <div class="review-section">
+                        <h3>Documents</h3>
+                        <div class="review-item">
+                            <strong>ID Document:</strong>
+                            <span id="review-id-doc">Uploaded</span>
+                        </div>
+                        <div class="review-item">
+                            <strong>Academic Transcript:</strong>
+                            <span id="review-transcript">Uploaded</span>
+                        </div>
+                        <div class="review-item">
+                            <strong>Proof of Payment:</strong>
+                            <span id="review-payment">Not uploaded</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="declaration" name="declaration" required>
+                        <label for="declaration">I declare that all information provided is accurate and complete.</label>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary prev-step">Previous</button>
+                        <button type="submit" class="btn btn-success">Submit Application</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 All Application ZA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="form-group">
+        <label for="aps-score">Your Calculated APS Score</label>
+        <input type="text" id="aps-score" name="aps-score" readonly>
+        <button type="button" id="calculate-aps" class="btn btn-secondary btn-sm">Calculate APS</button>
+    </div>
+    
+    <!-- Add this modal for APS calculation -->
+    <div id="aps-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Calculate Your APS Score</h2>
+            <div id="aps-calculator">
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/universities.js"></script>
+    <script src="../js/apsCalculator.js"></script>
+</body>
+</html>

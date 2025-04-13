@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - All Application ZA</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container flex-between">
+            <a href="../index.html" class="logo">
+                <span>All</span>
+                <span>Application</span>
+                <span>ZA</span>
+            </a>
+            <nav class="user-nav">
+                <div class="user-profile">
+                    <img src="../images/avatar-placeholder.png" alt="User Avatar" class="avatar">
+                    <span class="username">Admin User</span>
+                </div>
+                <button class="btn btn-danger">Logout</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Dashboard Layout -->
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="#">
+                            <i class="icon-dashboard"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-applications"></i>
+                            <span>Applications</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-students"></i>
+                            <span>Students</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-courses"></i>
+                            <span>Courses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-reports"></i>
+                            <span>Reports</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-settings"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-content">
+            <div class="dashboard-header">
+                <h1>Admin Dashboard</h1>
+                <div class="dashboard-actions">
+                    <button class="btn btn-primary">Add New Course</button>
+                </div>
+            </div>
+
+            <!-- Stats Overview -->
+            <div class="stats-overview">
+                <div class="stat-card">
+                    <div class="stat-value">1,245</div>
+                    <div class="stat-label">Total Applications</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">856</div>
+                    <div class="stat-label">Pending Review</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">289</div>
+                    <div class="stat-label">Accepted</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">100</div>
+                    <div class="stat-label">Rejected</div>
+                </div>
+            </div>
+
+            <!-- Recent Applications Table -->
+            <div class="widget">
+                <div class="widget-header">
+                    <h3>Recent Applications</h3>
+                    <div class="widget-actions">
+                        <input type="text" placeholder="Search applications...">
+                        <button class="btn btn-secondary btn-sm">Filter</button>
+                    </div>
+                </div>
+                <div class="widget-body">
+                    <table class="applications-table">
+                        <thead>
+                            <tr>
+                                <th>Student</th>
+                                <th>University</th>
+                                <th>Course</th>
+                                <th>APS Score</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John Doe</td>
+                                <td>University of Cape Town</td>
+                                <td>BSc Computer Science</td>
+                                <td>42</td>
+                                <td><span class="status-badge pending">Pending</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">Review</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Jane Smith</td>
+                                <td>University of Johannesburg</td>
+                                <td>BCom Accounting</td>
+                                <td>38</td>
+                                <td><span class="status-badge accepted">Accepted</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">View</button>
+                                </td>
+                            </tr>
+                            <!-- More rows would be loaded dynamically -->
+                        </tbody>
+                    </table>
+                    <div class="table-footer">
+                        <div class="table-pagination">
+                            <button class="btn btn-sm" disabled>Previous</button>
+                            <span>Page 1 of 5</span>
+                            <button class="btn btn-sm">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 All Application ZA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Application ZA - University Applications Made Easy</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- Welcome Animation -->
+    <div id="welcome-animation" class="welcome-screen">
+        <div class="animation-container">
+            <div class="logo-animation">
+                <span class="logo-part">All</span>
+                <span class="logo-part">Application</span>
+                <span class="logo-part">ZA</span>
+            </div>
+            <div class="loading-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content (hidden initially) -->
+    <div id="main-content" class="hidden">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="container flex-between">
+                <div class="logo">
+                    <span>All</span>
+                    <span>Application</span>
+                    <span>ZA</span>
+                </div>
+                <nav class="auth-buttons">
+                    <a href="auth/login.html" class="btn btn-primary">Login</a>
+                    <a href="auth/register.html" class="btn btn-secondary">Register</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>South African University Applications Made Simple</h1>
+                <p>Apply to multiple universities with one platform</p>
+                <div class="cta-buttons">
+                    <a href="auth/register.html" class="btn btn-primary">Get Started</a>
+                    <a href="universities/view.html" class="btn btn-secondary">Browse Universities</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Universities Preview Section -->
+        <section class="universities-preview">
+            <div class="container">
+                <h2>Featured Universities</h2>
+                <div id="featured-universities" class="universities-grid">
+                    <!-- Featured universities will be loaded here -->
+                </div>
+                <div class="text-center">
+                    <a href="universities/view.html" class="btn btn-primary">View All Universities</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works">
+            <div class="container">
+                <h2>How It Works</h2>
+                <div class="steps">
+                    <!-- Steps will be added here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <p>&copy; 2023 All Application ZA. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
