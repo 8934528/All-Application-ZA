@@ -48,4 +48,19 @@
 ### UI Features  
 - **Interactive Roadmap** - Drag-and-drop application planner  
 - **Progress Mascot** - Friendly guide through the process  
-- **Smart Alerts** - Deadline reminders that actually help  
+- **Smart Alerts** - Deadline reminders that actually help
+
+
+## 📈 Project Roadmap
+ - Phase 1: University Profiles
+
+ - Phase 2: Application Tracker
+
+ - Phase 3: AI Recommendation Engine
+
+ - Phase 4: Mobile App
+
+## 🤝 Join the Mission
+We welcome contributors! 
+
+---
