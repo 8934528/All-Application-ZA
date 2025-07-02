@@ -28,14 +28,9 @@
 - **Alumni Success** - Graduate outcomes visualized  
 
 ## 🛠 Tech Stack  
-### Frontend Magic  
-![ASP.NET WebForms](https://img.shields.io/badge/-WebForms-512BD4?logo=.net&logoColor=white)  
-![Animate.css](https://img.shields.io/badge/-Animate.css-4AA4AF?logo=css3&logoColor=white)  
-![Font Awesome](https://img.shields.io/badge/-Font_Awesome-528DD7?logo=fontawesome&logoColor=white)  
+### Frontend Magic  ![ASP.NET WebForms](https://img.shields.io/badge/-WebForms-512BD4?logo=.net&logoColor=white)  ![Animate.css](https://img.shields.io/badge/-Animate.css-4AA4AF?logo=css3&logoColor=white)  ![Font Awesome](https://img.shields.io/badge/-Font_Awesome-528DD7?logo=fontawesome&logoColor=white)  
 
-### Backend Power  
-![C#](https://img.shields.io/badge/-C%23-239120?logo=c-sharp&logoColor=white)  
-![SQL Server](https://img.shields.io/badge/-SQL_Server-CC2927?logo=microsoft-sql-server&logoColor=white)  
+### Backend Power  ![C#](https://img.shields.io/badge/-C%23-239120?logo=c-sharp&logoColor=white)  ![SQL Server](https://img.shields.io/badge/-SQL_Server-CC2927?logo=microsoft-sql-server&logoColor=white)  
 
 ## 🎨 Design Highlights  
 ### SA-Inspired Color Palette  
