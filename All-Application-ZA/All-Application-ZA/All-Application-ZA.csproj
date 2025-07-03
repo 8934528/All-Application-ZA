@@ -124,6 +124,7 @@
     <Content Include="Assets\Images\wsu.png" />
     <Content Include="Assets\Images\wsulogo.png" />
     <Content Include="Assets\Images\za.png" />
+    <Content Include="Classes\SessionValidator.js" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
