@@ -87,6 +87,7 @@
     <Content Include="Assets\Images\profile.jpg" />
     <Content Include="Assets\Images\rhodeslogo.png" />
     <Content Include="Assets\Images\ru.png" />
+    <Content Include="Assets\Images\singinbackgorund.jpeg" />
     <Content Include="Assets\Images\spu.png" />
     <Content Include="Assets\Images\spulogo.png" />
     <Content Include="Assets\Images\student_illustration.jpeg" />

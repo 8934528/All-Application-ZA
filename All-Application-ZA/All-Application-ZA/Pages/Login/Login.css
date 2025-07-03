@@ -13,14 +13,11 @@ body {
     overflow-x: hidden;
 }
 
-/* Header Styles (consistent with other pages) */
+/* Header Styles */
 .header {
     background: linear-gradient(135deg, #006400 0%, #228B22 100%);
     color: white;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 1rem 0;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
@@ -35,83 +32,62 @@ body {
 .logo {
     width: 50px;
     height: 50px;
-    margin-right: 15px;
     border-radius: 50%;
 }
 
-.main-nav ul {
-    display: flex;
-    list-style: none;
+.main-nav ul li {
+    position: relative;
 }
 
-    .main-nav ul li {
-        margin-left: 20px;
-        position: relative;
+    .main-nav ul li::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background: white;
+        bottom: -5px;
+        left: 0;
+        transition: width 0.3s ease;
     }
 
-        .main-nav ul li::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            background: white;
-            bottom: -5px;
-            left: 0;
-            transition: width 0.3s ease;
+    .main-nav ul li:hover::after {
+        width: 100%;
+    }
+
+    .main-nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+    }
+
+        .main-nav ul li a.active {
+            color: #FFD700;
+            font-weight: 600;
         }
 
-        .main-nav ul li:hover::after {
-            width: 100%;
+        .main-nav ul li a:hover {
+            color: #FFD700;
         }
-
-        .main-nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-            .main-nav ul li a.active {
-                color: #FFD700;
-                font-weight: 600;
-            }
-
-            .main-nav ul li a:hover {
-                color: #FFD700;
-            }
 
 .mobile-menu-btn {
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
+    color: white;
 }
-
 
 /* Login Form Section */
-.login-form-section {
-    padding: 5rem 2rem;
-    background-color: white;
-    text-align: center;
-}
-
-.form-container {
-    max-width: 500px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.login-form {
-    background: #f9f9f9;
+.login-form-container {
+    background: white;
     border-radius: 10px;
-    padding: 3rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
-    .login-form:hover {
+    .login-form-container:hover {
         transform: translateY(-5px);
         box-shadow: 0 10px 25px rgba(0, 100, 0, 0.1);
     }
@@ -119,7 +95,6 @@ body {
 .section-title {
     font-size: 2rem;
     color: #006400;
-    margin-bottom: 1rem;
     position: relative;
 }
 
@@ -127,8 +102,7 @@ body {
         content: '';
         position: absolute;
         bottom: -10px;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0;
         width: 80px;
         height: 3px;
         background: linear-gradient(135deg, #006400 0%, #228B22 100%);
@@ -137,49 +111,44 @@ body {
 .section-subtitle {
     font-size: 1.1rem;
     color: #555;
-    margin-bottom: 2rem;
 }
 
-.form-group {
-    margin-bottom: 1.5rem;
-    text-align: left;
-    position: relative;
+.form-group label {
+    color: #006400;
+    font-weight: 600;
 }
 
-    .form-group label {
-        display: block;
-        margin-bottom: 0.5rem;
-        color: #006400;
-        font-weight: 600;
-    }
+.input-group-text {
+    background-color: transparent;
+    border-right: none;
+    color: #006400;
+}
 
 .form-control {
-    width: 100%;
-    padding: 0.8rem 0;
-    border: none;
-    background: transparent;
-    border-bottom: 2px solid #ddd;
-    font-size: 1rem;
-    transition: all 0.3s ease;
+    border-left: none;
+    padding-left: 0;
+    border-color: #ddd;
 }
 
     .form-control:focus {
-        outline: none;
-        border-bottom-color: #006400;
+        box-shadow: none;
+        border-color: #006400;
     }
 
 .underline {
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 0;
+    left: 15px;
+    width: calc(100% - 30px);
     height: 2px;
     background: linear-gradient(135deg, #006400 0%, #228B22 100%);
-    transition: width 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
 }
 
 .form-control:focus ~ .underline {
-    width: 100%;
+    transform: scaleX(1);
 }
 
 .validation-error {
@@ -190,28 +159,12 @@ body {
 }
 
 .form-options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1.5rem 0;
-}
-
-.remember-me {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.form-checkbox {
-    width: 18px;
-    height: 18px;
-    accent-color: #006400;
+    font-size: 0.9rem;
 }
 
 .forgot-password {
     color: #006400;
     text-decoration: none;
-    font-size: 0.9rem;
     transition: all 0.3s ease;
 }
 
@@ -222,24 +175,18 @@ body {
 
 .submit-btn-container {
     position: relative;
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 1.5rem;
 }
 
 .submit-btn {
-    width: 100%;
-    padding: 1rem 3rem 1rem 1.5rem;
     background: linear-gradient(135deg, #006400 0%, #228B22 100%);
     color: white;
     border: none;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 1rem;
-    cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    padding: 0.75rem 1.5rem;
 }
 
 .submit-icon {
@@ -260,74 +207,6 @@ body {
     box-shadow: 0 10px 20px rgba(0, 100, 0, 0.2);
 }
 
-.divider {
-    display: flex;
-    align-items: center;
-    margin: 1.5rem 0;
-    color: #777;
-}
-
-    .divider::before, .divider::after {
-        content: '';
-        flex: 1;
-        border-bottom: 1px solid #ddd;
-    }
-
-    .divider span {
-        padding: 0 1rem;
-    }
-
-.social-login {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-.social-btn {
-    width: 100%;
-    padding: 0.8rem 1.5rem;
-    border: none;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-    .social-btn.google {
-        background: white;
-        color: #DB4437;
-        border: 1px solid #ddd;
-    }
-
-    .social-btn.facebook {
-        background: #4267B2;
-        color: white;
-    }
-
-    .social-btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .social-btn.google:hover {
-        background: #f5f5f5;
-    }
-
-    .social-btn.facebook:hover {
-        background: #3b5998;
-    }
-
-.register-prompt {
-    margin-top: 2rem;
-    color: #555;
-}
-
 .register-link {
     color: #006400;
     text-decoration: none;
@@ -341,47 +220,36 @@ body {
     }
 
 /* Features Section */
-.features-section {
-    padding: 5rem 2rem;
-    background-color: #e0e0e0;
-    text-align: center;
-}
-
 .features-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.feature-card {
-    flex: 1;
-    min-width: 300px;
     background: white;
     border-radius: 10px;
     padding: 2rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card {
+    background: #f9f9f9;
+    border-radius: 8px;
     transition: all 0.3s ease;
+    border: 1px solid #eee;
 }
 
     .feature-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 30px rgba(0, 100, 0, 0.1);
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 100, 0, 0.1);
+        border-color: #006400;
     }
 
 .feature-icon {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     background: linear-gradient(135deg, #006400 0%, #228B22 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 1.5rem;
+    margin: 0 auto 1rem;
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     transition: all 0.3s ease;
 }
 
@@ -391,98 +259,56 @@ body {
 
 .feature-card h3 {
     color: #006400;
-    margin-bottom: 1rem;
 }
 
-.feature-card p {
-    color: #555;
-}
-
-/* Footer Styles (consistent with other pages) */
+/* Footer Styles */
 .footer {
     background: linear-gradient(135deg, #006400 0%, #228B22 100%);
     color: white;
-    padding: 3rem 0 0;
 }
 
-.footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 0 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+.footer-section h3 {
+    position: relative;
+    padding-bottom: 0.5rem;
 }
 
-.footer-section {
-    margin-bottom: 2rem;
-}
-
-    .footer-section h3 {
-        margin-bottom: 1.2rem;
-        font-size: 1.3rem;
-        position: relative;
-        padding-bottom: 0.5rem;
+    .footer-section h3::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50px;
+        height: 2px;
+        background-color: white;
     }
 
-        .footer-section h3::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 50px;
-            height: 2px;
-            background-color: white;
-        }
-
-    .footer-section.about p {
-        margin-bottom: 1.5rem;
-        line-height: 1.7;
-    }
-
-.social-icons {
-    display: flex;
-    gap: 15px;
+.social-icons a {
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
 }
 
-    .social-icons a {
-        color: white;
-        font-size: 1.3rem;
-        transition: all 0.3s ease;
+    .social-icons a:hover {
+        color: #FFD700;
+        transform: translateY(-3px);
     }
 
-        .social-icons a:hover {
-            color: #FFD700;
-            transform: translateY(-3px);
-        }
-
-.footer-section.links ul {
-    list-style: none;
-}
-
-    .footer-section.links ul li {
-        margin-bottom: 0.8rem;
-    }
-
-        .footer-section.links ul li a {
-            color: white;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-            .footer-section.links ul li a:hover {
-                color: #FFD700;
-                padding-left: 5px;
-            }
-
-.footer-section.contact p {
-    margin-bottom: 1rem;
+.footer-section.links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
     display: flex;
     align-items: center;
-    gap: 10px;
+}
+
+    .footer-section.links ul li a:hover {
+        color: #FFD700;
+        padding-left: 5px;
+    }
+
+.footer-section.contact p {
+    display: flex;
+    align-items: center;
     transition: all 0.3s ease;
 }
 
@@ -491,83 +317,60 @@ body {
     }
 
 .footer-bottom {
-    text-align: center;
-    padding: 1.5rem 0;
     background-color: rgba(0, 0, 0, 0.1);
-    font-size: 0.9rem;
-    margin-top: 2rem;
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    .logo-container {
-        margin-bottom: 1rem;
-    }
-
-    .main-nav {
-        display: none;
-        width: 100%;
-    }
-
-        .main-nav.active {
-            display: block;
-        }
-
-        .main-nav ul {
-            flex-direction: column;
-            align-items: center;
-        }
-
-            .main-nav ul li {
-                margin: 0.8rem 0;
-            }
-
-    .mobile-menu-btn {
-        display: block;
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1.2rem;
-    }
-
-    .login-form {
+@media (max-width: 992px) {
+    .login-form-container, .features-container {
         padding: 2rem;
     }
 }
 
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 2rem;
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem;
     }
 
-    .hero p {
-        font-size: 1rem;
+    .main-nav {
+        display: none;
+    }
+
+        .main-nav.active {
+            display: block;
+            background: linear-gradient(135deg, #006400 0%, #228B22 100%);
+            padding: 1rem;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 100%;
+            z-index: 1000;
+        }
+
+        .main-nav ul {
+            flex-direction: column;
+        }
+
+            .main-nav ul li {
+                margin: 0.5rem 0;
+            }
+
+    .mobile-menu-btn {
+        display: block;
     }
 
     .section-title {
         font-size: 1.8rem;
     }
+}
 
-    .form-group {
-        margin-bottom: 1.5rem;
+@media (max-width: 576px) {
+    .login-form-container, .features-container {
+        padding: 1.5rem;
     }
 
-    .form-options {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
+    .section-title {
+        font-size: 1.5rem;
     }
 }
 

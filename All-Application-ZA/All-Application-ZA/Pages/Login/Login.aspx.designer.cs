@@ -150,24 +150,6 @@ namespace All_Application_ZA.Pages.Login
         protected global::System.Web.UI.WebControls.Button btnLogin;
 
         /// <summary>
-        /// btnGoogle control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnGoogle;
-
-        /// <summary>
-        /// btnFacebook control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnFacebook;
-
-        /// <summary>
         /// lnkRegisterNow control.
         /// </summary>
         /// <remarks>

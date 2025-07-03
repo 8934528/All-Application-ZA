@@ -23,13 +23,19 @@
                     <div class="admin-controls">
                         <div class="dropdown">
                             <asp:LinkButton ID="btnAdminMenu" runat="server" CssClass="btn btn-admin dropdown-toggle" data-bs-toggle="dropdown">
-                                <i class="fas fa-user-shield"></i> <asp:Label ID="lblAdminName" runat="server" Text="Admin User"></asp:Label>
+                                <i class="fas fa-user-shield"></i>
+                                <asp:Label ID="lblAdminName" runat="server" Text="Admin User"></asp:Label>
                             </asp:LinkButton>
                             <ul class="dropdown-menu">
-                                <li><asp:HyperLink ID="lnkProfile" runat="server" NavigateUrl="~/Pages/Admin/Profile/Profile.aspx" CssClass="dropdown-item"><i class="fas fa-user-cog"></i> Profile</asp:HyperLink></li>
-                                <li><asp:HyperLink ID="lnkSettings" runat="server" NavigateUrl="~/Pages/Admin/Settings/Settings.aspx" CssClass="dropdown-item"><i class="fas fa-cog"></i> Settings</asp:HyperLink></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><asp:LinkButton ID="lnkLogout" runat="server" CssClass="dropdown-item" OnClick="lnkLogout_Click"><i class="fas fa-sign-out-alt"></i> Logout</asp:LinkButton></li>
+                                <li>
+                                    <asp:HyperLink ID="lnkProfile" runat="server" NavigateUrl="~/Pages/Admin/Profile/Profile.aspx" CssClass="dropdown-item"><i class="fas fa-user-cog"></i> Profile</asp:HyperLink></li>
+                                <li>
+                                    <asp:HyperLink ID="lnkSettings" runat="server" NavigateUrl="~/Pages/Admin/Settings/Settings.aspx" CssClass="dropdown-item"><i class="fas fa-cog"></i> Settings</asp:HyperLink></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <asp:LinkButton ID="lnkLogout" runat="server" CssClass="dropdown-item" OnClick="lnkLogout_Click"><i class="fas fa-sign-out-alt"></i> Logout</asp:LinkButton></li>
                             </ul>
                         </div>
                     </div>
@@ -58,9 +64,10 @@
                     <!-- Main Content Area -->
                     <div class="col-md-9 col-lg-10 main-content">
                         <div class="admin-content-header">
-                            <h2><i class="fas fa-cogs"></i> System Settings</h2>
+                            <h2><i class="fas fa-cogs"></i>System Settings</h2>
                             <div class="breadcrumb">
-                                <asp:HyperLink ID="lnkHome" runat="server" NavigateUrl="~/Pages/Admin/AdminDash/AdminDash.aspx">Home</asp:HyperLink> / <span class="active">Settings</span>
+                                <asp:HyperLink ID="lnkHome" runat="server" NavigateUrl="~/Pages/Admin/AdminDash/AdminDash.aspx">Home</asp:HyperLink>
+                                / <span class="active">Settings</span>
                             </div>
                         </div>
 
@@ -82,6 +89,7 @@
                                         </li>
                                     </ul>
                                 </div>
+
                                 <div class="card-body">
                                     <div class="tab-content" id="settingsTabContent">
                                         <!-- General Settings Tab -->
@@ -171,7 +179,7 @@
                                         <!-- Advanced Settings Tab -->
                                         <div class="tab-pane fade" id="advanced" role="tabpanel">
                                             <div class="alert alert-warning">
-                                                <i class="fas fa-exclamation-triangle"></i> Warning: These settings affect system functionality. Change with caution.
+                                                <i class="fas fa-exclamation-triangle"></i>Warning: These settings affect system functionality. Change with caution.
                                             </div>
                                             <asp:Panel ID="pnlAdvanced" runat="server" DefaultButton="btnSaveAdvanced">
                                                 <div class="mb-3">
