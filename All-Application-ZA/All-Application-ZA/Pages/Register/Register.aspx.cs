@@ -18,7 +18,7 @@ namespace All_Application_ZA.Pages.Register
             }
         }
 
-        
+
 
         private bool ValidateForm()
         {
@@ -104,15 +104,15 @@ namespace All_Application_ZA.Pages.Register
             string lastName = txtLastName.Text.Trim();
             string idNumber = txtIDNumber.Text.Trim();
             DateTime dateOfBirth = DateTime.Parse(txtDOB.Text);
-            string gender = "";  // the one with "" ill add them in form later on 
+            string gender = "";
             string phoneNumber = txtPhone.Text.Trim();
             string address = txtAddress.Text.Trim();
-            string city = "";  
+            string city = "";
             string province = ddlProvince.SelectedValue;
-            string postalCode = "";  
-            string currentSchool = ""; 
-            string yearOfStudy = ""; 
-            string bio = ""; 
+            string postalCode = "";
+            string currentSchool = "";
+            string yearOfStudy = "";
+            string bio = "";
 
             // Check if username is available
             if (userManager.IsUsernameTaken(username))
@@ -140,8 +140,9 @@ namespace All_Application_ZA.Pages.Register
 
             if (result.IsAuthenticated)
             {
-                // Registration successful
-                ScriptManager.RegisterStartupScript(this, GetType(), "showSuccess", "showSuccessMessage();", true);
+                // Registration successful - redirect to login page with success parameter
+                Response.Redirect("~/Pages/Login/Login.aspx?registration=success", false);
+                Context.ApplicationInstance.CompleteRequest();
             }
             else
             {
@@ -152,14 +153,6 @@ namespace All_Application_ZA.Pages.Register
         private void ShowErrorMessage(string message)
         {
             ScriptManager.RegisterStartupScript(this, GetType(), "showError", $"alert('{message.Replace("'", "\\'")}');", true);
-        }
-
-        protected void btnRegister_Click(object sender, EventArgs e)
-        {
-            if (ValidateForm())
-            {
-                RegisterStudent();
-            }
         }
     }
 }

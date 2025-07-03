@@ -47,28 +47,28 @@
                         
                         <div class="form-group">
                             <asp:Label ID="lblFirstName" runat="server" AssociatedControlID="txtFirstName" Text="First Name"></asp:Label>
-                            <asp:TextBox ID="txtFirstName" runat="server" CssClass="form-control" required></asp:TextBox>
+                            <asp:TextBox ID="txtFirstName" runat="server" CssClass="form-control" required="true"></asp:TextBox>
                             <div class="underline"></div>
                             <span class="validation-error" id="firstNameError"></span>
                         </div>
 
                         <div class="form-group">
                             <asp:Label ID="lblLastName" runat="server" AssociatedControlID="txtLastName" Text="Last Name"></asp:Label>
-                            <asp:TextBox ID="txtLastName" runat="server" CssClass="form-control" required></asp:TextBox>
+                            <asp:TextBox ID="txtLastName" runat="server" CssClass="form-control" required="true"></asp:TextBox>
                             <div class="underline"></div>
                             <span class="validation-error" id="lastNameError"></span>
                         </div>
 
                         <div class="form-group">
                             <asp:Label ID="lblIDNumber" runat="server" AssociatedControlID="txtIDNumber" Text="ID/Passport Number"></asp:Label>
-                            <asp:TextBox ID="txtIDNumber" runat="server" CssClass="form-control" required></asp:TextBox>
+                            <asp:TextBox ID="txtIDNumber" runat="server" CssClass="form-control" required="ture"></asp:TextBox>
                             <div class="underline"></div>
                             <span class="validation-error" id="idNumberError"></span>
                         </div>
 
                         <div class="form-group">
                             <asp:Label ID="lblDOB" runat="server" AssociatedControlID="txtDOB" Text="Date of Birth"></asp:Label>
-                            <asp:TextBox ID="txtDOB" runat="server" CssClass="form-control" TextMode="Date" required></asp:TextBox>
+                            <asp:TextBox ID="txtDOB" runat="server" CssClass="form-control" TextMode="Date" required="ture"></asp:TextBox>
                             <div class="underline"></div>
                             <span class="validation-error" id="dobError"></span>
                         </div>
@@ -80,28 +80,28 @@
                         
                         <div class="form-group">
                             <asp:Label ID="lblEmail" runat="server" AssociatedControlID="txtEmail" Text="Email Address"></asp:Label>
-                            <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" TextMode="Email" required></asp:TextBox>
+                            <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" TextMode="Email" required="true"></asp:TextBox>
                             <div class="underline"></div>
                             <span class="validation-error" id="emailError"></span>
                         </div>
 
                         <div class="form-group">
                             <asp:Label ID="lblPhone" runat="server" AssociatedControlID="txtPhone" Text="Phone Number"></asp:Label>
-                            <asp:TextBox ID="txtPhone" runat="server" CssClass="form-control" TextMode="Phone" required></asp:TextBox>
+                            <asp:TextBox ID="txtPhone" runat="server" CssClass="form-control" TextMode="Phone" required="true"></asp:TextBox>
                             <div class="underline"></div>
                             <span class="validation-error" id="phoneError"></span>
                         </div>
 
                         <div class="form-group">
                             <asp:Label ID="lblAddress" runat="server" AssociatedControlID="txtAddress" Text="Physical Address"></asp:Label>
-                            <asp:TextBox ID="txtAddress" runat="server" CssClass="form-control" required></asp:TextBox>
+                            <asp:TextBox ID="txtAddress" runat="server" CssClass="form-control" required="true"></asp:TextBox>
                             <div class="underline"></div>
                             <span class="validation-error" id="addressError"></span>
                         </div>
 
                         <div class="form-group">
                             <asp:Label ID="lblProvince" runat="server" AssociatedControlID="ddlProvince" Text="Province"></asp:Label>
-                            <asp:DropDownList ID="ddlProvince" runat="server" CssClass="form-control" required>
+                            <asp:DropDownList ID="ddlProvince" runat="server" CssClass="form-control" required="true">
                                 <asp:ListItem Value="" Text="Select Province" Selected="True"></asp:ListItem>
                                 <asp:ListItem Value="EC" Text="Eastern Cape"></asp:ListItem>
                                 <asp:ListItem Value="FS" Text="Free State"></asp:ListItem>
@@ -124,21 +124,21 @@
                         
                         <div class="form-group">
                             <asp:Label ID="lblUsername" runat="server" AssociatedControlID="txtUsername" Text="Username"></asp:Label>
-                            <asp:TextBox ID="txtUsername" runat="server" CssClass="form-control" required></asp:TextBox>
+                            <asp:TextBox ID="txtUsername" runat="server" CssClass="form-control" required="true"></asp:TextBox>
                             <div class="underline"></div>
                             <span class="validation-error" id="usernameError"></span>
                         </div>
 
                         <div class="form-group">
                             <asp:Label ID="lblPassword" runat="server" AssociatedControlID="txtPassword" Text="Password"></asp:Label>
-                            <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" TextMode="Password" required></asp:TextBox>
+                            <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" TextMode="Password" required="true"></asp:TextBox>
                             <div class="underline"></div>
                             <span class="validation-error" id="passwordError"></span>
                         </div>
 
                         <div class="form-group">
                             <asp:Label ID="lblConfirmPassword" runat="server" AssociatedControlID="txtConfirmPassword" Text="Confirm Password"></asp:Label>
-                            <asp:TextBox ID="txtConfirmPassword" runat="server" CssClass="form-control" TextMode="Password" required></asp:TextBox>
+                            <asp:TextBox ID="txtConfirmPassword" runat="server" CssClass="form-control" TextMode="Password" required="true"></asp:TextBox>
                             <div class="underline"></div>
                             <span class="validation-error" id="confirmPasswordError"></span>
                         </div>
