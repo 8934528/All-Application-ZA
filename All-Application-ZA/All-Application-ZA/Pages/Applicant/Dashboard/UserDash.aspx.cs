@@ -21,8 +21,7 @@ namespace All_Application_ZA.Pages.Applicant.Dashboard
 
             if (!IsPostBack && userData != null)
             {
-                // You can use userData to populate any dashboard elements
-                // For example, set welcome message or user stats
+                lblSessName.Text = Session["Username"].ToString();
             }
         }
     }

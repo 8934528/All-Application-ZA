@@ -35,7 +35,8 @@
         <!-- Welcome Banner -->
         <section class="welcome-banner animate__animated animate__fadeIn">
             <div class="welcome-content">
-                <h2>Welcome back, <span class="username">User Name</span>!</h2>
+                <h2>Welcome back, <span class="username">
+                    <asp:Label ID="lblSessName" runat="server" Text="User Name"></asp:Label></span>!</h2>
                 <p>Track your applications and discover new opportunities</p>
                 <div class="application-stats">
                     <div class="stat-card">
