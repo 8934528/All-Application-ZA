@@ -17,7 +17,7 @@
         <!-- Header (consistent with other pages) -->
         <header class="header animate__animated animate__fadeInDown">
             <div class="logo-container">
-                <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Assets/Images/logo.png" CssClass="logo" AlternateText="All-Application-ZA Logo" />
+                <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Assets/Images/za.png" CssClass="logo" AlternateText="All-Application-ZA Logo" />
                 <h1>All-Application-ZA</h1>
             </div>
             <nav class="main-nav">
@@ -38,18 +38,6 @@
                 <i class="fas fa-bars"></i>
             </div>
         </header>
-
-        <!-- Hero Section -->
-        <section class="hero animate__animated animate__fadeIn">
-            <div class="hero-content">
-                <h1 class="animate__animated animate__fadeInUp">Welcome Back</h1>
-                <p class="animate__animated animate__fadeInUp animate__delay-1s">Sign in to access your personalized dashboard</p>
-                <div class="scroll-down animate__animated animate__fadeIn animate__delay-2s">
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-            </div>
-            <div class="hero-pattern"></div>
-        </section>
 
         <!-- Login Form Section -->
         <section class="login-form-section">

@@ -17,8 +17,8 @@
             <div class="container-fluid">
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="d-flex align-items-center">
-                        <img src="../../../Assets/Images/Adminlogo.png" alt="All-Application-ZA Logo" class="logo" />
-                        <h1>All-Application-ZA <span class="admin-badge">Admin</span></h1>
+                        <img src="../../../Assets/Images/za.png" alt="All-Application-ZA Logo" class="logo" />
+                        <h1><span class="admin-badge">Admin</span></h1>
                     </div>
                     <div class="admin-controls">
                         <div class="dropdown">

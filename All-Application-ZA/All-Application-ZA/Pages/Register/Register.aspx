@@ -12,13 +12,13 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="Register.js"></script>
 </head>
+
 <body>
     <form id="form1" runat="server">
         <!-- Header (consistent with other pages) -->
         <header class="header animate__animated animate__fadeInDown">
             <div class="logo-container">
-                <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Assets/Images/logo.png" CssClass="logo" AlternateText="All-Application-ZA Logo" />
-                <h1>All-Application-ZA</h1>
+                <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Assets/Images/za.png" CssClass="logo" AlternateText="All-Application-ZA Logo" />
             </div>
             <nav class="main-nav">
                 <ul>
@@ -33,18 +33,6 @@
                 <i class="fas fa-bars"></i>
             </div>
         </header>
-
-        <!-- Hero Section -->
-        <section class="hero animate__animated animate__fadeIn">
-            <div class="hero-content">
-                <h1 class="animate__animated animate__fadeInUp">Create Your Account</h1>
-                <p class="animate__animated animate__fadeInUp animate__delay-1s">Join thousands of students finding their perfect university match</p>
-                <div class="scroll-down animate__animated animate__fadeIn animate__delay-2s">
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-            </div>
-            <div class="hero-pattern"></div>
-        </section>
 
         <!-- Registration Form -->
         <section class="register-form-section">

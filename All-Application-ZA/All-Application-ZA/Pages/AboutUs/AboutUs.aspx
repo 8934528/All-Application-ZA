@@ -16,8 +16,7 @@
         <!-- Header (consistent with main page) -->
         <header class="header animate__animated animate__fadeInDown">
             <div class="logo-container">
-                <img src="../../Assets/Images/logo.png" alt="All-Application-ZA Logo" class="logo" />
-                <h1>All-Application-ZA</h1>
+                <img src="../../Assets/Images/za.png" alt="All-Application-ZA Logo" class="logo" />
             </div>
             <nav class="main-nav">
                 <ul>
@@ -33,16 +32,13 @@
             </div>
         </header>
 
-        <!-- Hero Section -->
-        <section class="hero animate__animated animate__fadeIn">
+        <!-- Hero Section with background image -->
+        <section class="hero animate__animated animate__fadeIn" >
+            <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1 class="animate__animated animate__fadeInUp">Our Story</h1>
                 <p class="animate__animated animate__fadeInUp animate__delay-1s">Helping South African students navigate university applications since 2024</p>
-                <div class="scroll-down animate__animated animate__fadeIn animate__delay-2s">
-                    <i class="fas fa-chevron-down"></i>
-                </div>
             </div>
-            <div class="hero-pattern"></div>
         </section>
 
         <!-- Mission Section -->
@@ -76,50 +72,20 @@
             <p class="section-subtitle animate__animated animate__fadeIn animate__delay-1s">The passionate people behind All-Application-ZA</p>
             
             <div class="team-grid">
-                <!-- Team Member 1 -->
-                <div class="team-card animate__animated animate__fadeInUp">
-                    <div class="team-img">
-                        <img src="../../Assets/Images/team1.jpg" alt="Team Member" />
-                        <div class="social-links">
-                            <%--<a href="#"><i class="fab fa-twitter"></i></a>--%>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <h3>###</h3>
-                    <p class="position">Founder & CEO</p>
-                    <p class="bio">Former university admissions officer with 10+ years experience</p>
-                </div>
                 
-                <!-- Team Member 2 -->
+                <!-- Team Member -->
                 <div class="team-card animate__animated animate__fadeInUp animate__delay-1s">
                     <div class="team-img">
                         <img src="../../Assets/Images/profile.jpg" alt="Team Member" />
                         <div class="social-links">
-                            <%--<a href="#"><i class="fab fa-twitter"></i></a>--%>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
+                            <a href="https://www.linkedin.com/in/mihlali-8934528-mabovula"><i class="fab fa-linkedin"></i></a>
+                            <a href="mailto:mihlalimabovula@outlook.com"><i class="fas fa-envelope"></i></a>
                         </div>
                     </div>
                     <h3>Mihlali Mabovula</h3>
-                    <p class="position">Co-Founder | Tech Lead</p>
-                    <p class="bio">Makes sure everything runs smoothly behind the scenes</p>
-                </div>
-                
-                <!-- Team Member 3 -->
-                <div class="team-card animate__animated animate__fadeInUp animate__delay-2s">
-                    <div class="team-img">
-                        <img src="../../Assets/Images/team3.jpg" alt="Team Member" />
-                        <div class="social-links">
-                            <%--<a href="#"><i class="fab fa-twitter"></i></a>--%>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <h3>###</h3>
-                    <p class="position">Student Advisor</p>
-                    <p class="bio">Helps students navigate the application process</p>
-                </div>
+                    <p class="position">Founder | Developer</p>
+                    <p class="bio">Developerd the system from Scratch to hero</p>
+                </div>                
             </div>
         </section>
 

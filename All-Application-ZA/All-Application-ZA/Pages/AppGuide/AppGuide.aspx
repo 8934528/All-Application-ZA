@@ -17,8 +17,7 @@
         <!-- Header (consistent with other pages) -->
         <header class="header animate__animated animate__fadeInDown">
             <div class="logo-container">
-                <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Assets/Images/logo.png" CssClass="logo" AlternateText="All-Application-ZA Logo" />
-                <h1>All-Application-ZA</h1>
+                <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Assets/Images/za.png" CssClass="logo" AlternateText="All-Application-ZA Logo" />
             </div>
             <nav class="main-nav">
                 <ul>

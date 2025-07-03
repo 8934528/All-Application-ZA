@@ -18,16 +18,20 @@
         <!-- Header (consistent with main page) -->
         <header class="header animate__animated animate__fadeInDown">
             <div class="logo-container">
-                <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Assets/Images/logo.png" CssClass="logo" AlternateText="All-Application-ZA Logo" />
-                <h1>All-Application-ZA</h1>
+                <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Assets/Images/za.png" CssClass="logo" AlternateText="All-Application-ZA Logo" />
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><asp:HyperLink ID="lnkHome" runat="server" NavigateUrl="~/Pages/Main/Main.aspx"><i class="fas fa-home"></i>Home</asp:HyperLink></li>
-                    <li><asp:HyperLink ID="lnkAbout" runat="server" NavigateUrl="~/Pages/AboutUs/AboutUs.aspx"><i class="fas fa-info-circle"></i>About Us</asp:HyperLink></li>
-                    <li><asp:HyperLink ID="lnkContact" runat="server" NavigateUrl="~/Pages/ContactUs/ContactUs.aspx" CssClass="active"><i class="fas fa-envelope"></i>Contact Us</asp:HyperLink></li>
-                    <li><asp:HyperLink ID="lnkRegister" runat="server" NavigateUrl="~/Pages/Register/Register.aspx"><i class="fas fa-user-plus"></i>Register</asp:HyperLink></li>
-                    <li><asp:HyperLink ID="lnkLogin" runat="server" NavigateUrl="~/Pages/Login/Login.aspx"><i class="fas fa-sign-in-alt"></i>Login</asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="lnkHome" runat="server" NavigateUrl="~/Pages/Main/Main.aspx"><i class="fas fa-home"></i>Home</asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="lnkAbout" runat="server" NavigateUrl="~/Pages/AboutUs/AboutUs.aspx"><i class="fas fa-info-circle"></i>About Us</asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="lnkContact" runat="server" NavigateUrl="~/Pages/ContactUs/ContactUs.aspx" CssClass="active"><i class="fas fa-envelope"></i>Contact Us</asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="lnkRegister" runat="server" NavigateUrl="~/Pages/Register/Register.aspx"><i class="fas fa-user-plus"></i>Register</asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="lnkLogin" runat="server" NavigateUrl="~/Pages/Login/Login.aspx"><i class="fas fa-sign-in-alt"></i>Login</asp:HyperLink></li>
                 </ul>
             </nav>
             <div class="mobile-menu-btn">
@@ -35,16 +39,13 @@
             </div>
         </header>
 
-        <!-- Hero Section -->
+        <!-- Hero Section with background image -->
         <section class="hero animate__animated animate__fadeIn">
             <div class="hero-content">
                 <h1 class="animate__animated animate__fadeInUp">Get In Touch</h1>
                 <p class="animate__animated animate__fadeInUp animate__delay-1s">We'd love to hear from you! Reach out with questions or feedback.</p>
-                <div class="scroll-down animate__animated animate__fadeIn animate__delay-2s">
-                    <i class="fas fa-chevron-down"></i>
-                </div>
             </div>
-            <div class="hero-pattern"></div>
+            <div class="hero-overlay"></div>
         </section>
 
         <!-- Contact Methods -->
@@ -195,10 +196,14 @@
                 <div class="footer-section links">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><asp:HyperLink ID="lnkFooterHome" runat="server" NavigateUrl="~/Pages/Main/Main.aspx"><i class="fas fa-arrow-right"></i>Home</asp:HyperLink></li>
-                        <li><asp:HyperLink ID="lnkFooterAbout" runat="server" NavigateUrl="~/Pages/AboutUs/AboutUs.aspx"><i class="fas fa-arrow-right"></i>About Us</asp:HyperLink></li>
-                        <li><asp:HyperLink ID="lnkFooterContact" runat="server" NavigateUrl="~/Pages/ContactUs/ContactUs.aspx"><i class="fas fa-arrow-right"></i>Contact Us</asp:HyperLink></li>
-                        <li><asp:HyperLink ID="lnkFooterGuide" runat="server" NavigateUrl="~/Pages/AppGuide/AppGuide.aspx"><i class="fas fa-arrow-right"></i>Application Guide</asp:HyperLink></li>
+                        <li>
+                            <asp:HyperLink ID="lnkFooterHome" runat="server" NavigateUrl="~/Pages/Main/Main.aspx"><i class="fas fa-arrow-right"></i>Home</asp:HyperLink></li>
+                        <li>
+                            <asp:HyperLink ID="lnkFooterAbout" runat="server" NavigateUrl="~/Pages/AboutUs/AboutUs.aspx"><i class="fas fa-arrow-right"></i>About Us</asp:HyperLink></li>
+                        <li>
+                            <asp:HyperLink ID="lnkFooterContact" runat="server" NavigateUrl="~/Pages/ContactUs/ContactUs.aspx"><i class="fas fa-arrow-right"></i>Contact Us</asp:HyperLink></li>
+                        <li>
+                            <asp:HyperLink ID="lnkFooterGuide" runat="server" NavigateUrl="~/Pages/AppGuide/AppGuide.aspx"><i class="fas fa-arrow-right"></i>Application Guide</asp:HyperLink></li>
                     </ul>
                 </div>
                 <div class="footer-section contact">

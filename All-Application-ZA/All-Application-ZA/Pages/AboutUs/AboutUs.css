@@ -91,13 +91,23 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 80vh;
-    background: linear-gradient(135deg, rgba(0, 100, 0, 0.8) 0%, rgba(34, 139, 34, 0.8) 100%);
+    height: 70vh;
+    background: linear-gradient(135deg, rgba(0, 100, 0, 0.8) 0%, rgba(34, 139, 34, 0.8) 100%), url('../../Assets/Images/about.jpeg') center/cover no-repeat;
     color: white;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
 
 .hero-content {
@@ -107,6 +117,7 @@ body {
     text-align: center;
     width: 100%;
     z-index: 2;
+    position: relative;
 }
 
 .hero h1 {
@@ -142,16 +153,6 @@ body {
     }
 }
 
-.hero-pattern {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../../Assets/Images/pattern.png');
-    opacity: 0.1;
-    z-index: 1;
-}
 
 /* Mission Section */
 .mission-section {

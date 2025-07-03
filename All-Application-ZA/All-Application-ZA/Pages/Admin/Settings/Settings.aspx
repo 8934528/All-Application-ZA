@@ -17,8 +17,8 @@
             <div class="container-fluid">
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="d-flex align-items-center">
-                        <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Assets/Images/Adminlogo.png" CssClass="logo" AlternateText="All-Application-ZA Logo" />
-                        <h1>All-Application-ZA <span class="admin-badge">Admin</span></h1>
+                        <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Assets/Images/za.png" CssClass="logo" AlternateText="All-Application-ZA Logo" />
+                        <h1><span class="admin-badge">Admin</span></h1>
                     </div>
                     <div class="admin-controls">
                         <div class="dropdown">
