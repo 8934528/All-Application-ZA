@@ -5,7 +5,7 @@
 [![Bootstrap](https://img.shields.io/badge/-Bootstrap-7952B3?logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 [![Made in South Africa](https://img.shields.io/badge/-Made_in_SA-FFB81C?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjMDA3NzQ5IiBkPSJNMjU2IDhDMTE5IDggOCAxMTkgOCAyNTZzMTExIDI0OCAyNDggMjQ4IDI0OC0xMTEgMjQ4LTI0OFMzOTMgOCAyNTYgOHoiLz48L3N2Zz4&logoColor=white)](https://www.gov.za/)
 
-## 🚀 Why We Built This
+## 🚀 Why I Built This
 - **#FutureReady** - Bridging the gap between dreams and admissions  
 - **One-Stop Solution** - All 26 universities in one place  
 - **Stress-Free Applications** - Never miss a deadline again  
@@ -56,6 +56,6 @@
  - Phase 4: Mobile App
 
 ## 🤝 Join the Mission
-We welcome contributors! 
+I welcome contributors! 
 
 ---
