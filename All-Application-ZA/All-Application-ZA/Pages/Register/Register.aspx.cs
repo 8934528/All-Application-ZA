@@ -14,7 +14,7 @@ namespace All_Application_ZA.Pages.Register
         {
             if (!IsPostBack)
             {
-                // Initialize form if needed
+               
             }
         }
 
@@ -104,15 +104,15 @@ namespace All_Application_ZA.Pages.Register
             string lastName = txtLastName.Text.Trim();
             string idNumber = txtIDNumber.Text.Trim();
             DateTime dateOfBirth = DateTime.Parse(txtDOB.Text);
-            string gender = ""; // You might want to add gender field to your form
+            string gender = "";  // the one with "" ill add them in form later on 
             string phoneNumber = txtPhone.Text.Trim();
             string address = txtAddress.Text.Trim();
-            string city = ""; // You might want to add city field to your form
+            string city = "";  
             string province = ddlProvince.SelectedValue;
-            string postalCode = ""; // You might want to add postal code field to your form
-            string currentSchool = ""; // You might want to add current school field to your form
-            string yearOfStudy = ""; // You might want to add year of study field to your form
-            string bio = ""; // You might want to add bio field to your form
+            string postalCode = "";  
+            string currentSchool = ""; 
+            string yearOfStudy = ""; 
+            string bio = ""; 
 
             // Check if username is available
             if (userManager.IsUsernameTaken(username))
@@ -151,8 +151,6 @@ namespace All_Application_ZA.Pages.Register
 
         private void ShowErrorMessage(string message)
         {
-            // You can implement a more sophisticated error display mechanism here
-            // For now, we'll use a simple JavaScript alert
             ScriptManager.RegisterStartupScript(this, GetType(), "showError", $"alert('{message.Replace("'", "\\'")}');", true);
         }
 
