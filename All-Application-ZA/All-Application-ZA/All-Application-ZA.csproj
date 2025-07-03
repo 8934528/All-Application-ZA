@@ -192,6 +192,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Universities.cs" />
+    <Compile Include="Classes\UserManagement.cs" />
     <Compile Include="Pages\AboutUs\AboutUs.aspx.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
