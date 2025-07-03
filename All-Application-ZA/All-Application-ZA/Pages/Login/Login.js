@@ -57,7 +57,34 @@
     }, 100);
 });
 
-// Custom form validation
+// Toast notification function
+function showToast(type, message) {
+    const toast = document.createElement('div');
+    toast.className = `toast-notification ${type}`;
+    toast.innerHTML = `
+        <div class="toast-icon">
+            ${type === 'success' ? '<i class="fas fa-check-circle"></i>' : '<i class="fas fa-exclamation-circle"></i>'}
+        </div>
+        <div class="toast-message">${message}</div>
+        <div class="toast-close"><i class="fas fa-times"></i></div>
+    `;
+
+    document.body.appendChild(toast);
+
+    // Auto-remove after 5 seconds
+    setTimeout(() => {
+        toast.classList.add('fade-out');
+        setTimeout(() => toast.remove(), 300);
+    }, 5000);
+
+    // Manual close
+    toast.querySelector('.toast-close').addEventListener('click', () => {
+        toast.classList.add('fade-out');
+        setTimeout(() => toast.remove(), 300);
+    });
+}
+
+// Client-side form validation
 function validateLoginForm() {
     let isValid = true;
 

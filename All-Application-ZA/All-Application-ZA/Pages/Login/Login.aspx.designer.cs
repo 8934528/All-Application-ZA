@@ -141,13 +141,13 @@ namespace All_Application_ZA.Pages.Login
         protected global::System.Web.UI.WebControls.HyperLink lnkForgotPassword;
 
         /// <summary>
-        /// btnLogin control.
+        /// btnLogin1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogin;
+        protected global::System.Web.UI.WebControls.Button btnLogin1;
 
         /// <summary>
         /// lnkRegisterNow control.

@@ -100,7 +100,7 @@
                             </div>
 
                             <div class="submit-btn-container mb-4">
-                                <asp:Button ID="btnLogin" runat="server" Text="Sign In" CssClass="submit-btn w-100" OnClientClick="return validateLoginForm();" />
+                                <asp:Button ID="btnLogin1" runat="server" Text="Sign In" CssClass="submit-btn w-100" OnClick="btnLogin1_Click" />
                                 <i class="fas fa-sign-in-alt submit-icon"></i>
                             </div>
 
