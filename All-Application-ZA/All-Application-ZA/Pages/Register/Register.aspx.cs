@@ -18,8 +18,6 @@ namespace All_Application_ZA.Pages.Register
             }
         }
 
-
-
         private bool ValidateForm()
         {
             // Validate required fields
@@ -153,6 +151,14 @@ namespace All_Application_ZA.Pages.Register
         private void ShowErrorMessage(string message)
         {
             ScriptManager.RegisterStartupScript(this, GetType(), "showError", $"alert('{message.Replace("'", "\\'")}');", true);
+        }
+
+        protected void btnRegister_Click(object sender, EventArgs e)
+        {
+            if (ValidateForm())
+            {
+                RegisterStudent();
+            }
         }
     }
 }
