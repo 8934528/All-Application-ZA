@@ -12,18 +12,29 @@ namespace All_Application_ZA.Pages.Login
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            // Check if user is already logged in
+            if (Session["UserId"] != null)
+            {
+                RedirectBasedOnRole();
+                return;
+            }
+
             // Check for successful registration redirect
             if (Request.QueryString["registration"] == "success")
             {
-                // Show success message if needed
                 ScriptManager.RegisterStartupScript(this, GetType(), "showSuccess",
                     "showToast('success', 'Registration successful! You can now login.');", true);
             }
         }
-             
+
         private bool ValidateForm()
         {
             bool isValid = true;
+
+            // Clear previous errors
+            ScriptManager.RegisterStartupScript(this, GetType(), "clearErrors",
+                "document.getElementById('usernameError').textContent = ''; " +
+                "document.getElementById('passwordError').textContent = '';", true);
 
             // Validate username/email
             if (string.IsNullOrEmpty(txtUsername.Text.Trim()))
@@ -54,7 +65,7 @@ namespace All_Application_ZA.Pages.Login
 
             if (userInfo.IsAuthenticated)
             {
-                // Store user information in session
+                // Store basic user information in session
                 Session["UserId"] = userInfo.UserId;
                 Session["Username"] = userInfo.Username;
                 Session["FirstName"] = userInfo.FirstName;
@@ -62,23 +73,33 @@ namespace All_Application_ZA.Pages.Login
                 Session["RoleId"] = userInfo.RoleId;
                 Session["RoleName"] = userInfo.RoleName;
 
-                // Redirect based on user role
-                switch (userInfo.RoleName.ToLower())
-                {
-                    case "student":
-                        Response.Redirect("~/Pages/Applicant/Dashboard/UserDash.aspx", false);
-                        break;
-                    case "admin":
-                        Response.Redirect("~/Pages/Admin/AdminDash/AdminDash.aspx", false);
-                        break;
-                    default:
-                        ShowErrorMessage("Your account type doesn't have an assigned dashboard");
-                        break;
-                }
+                // Initialize complete session data using SessionManager
+                SessionManager sessionManager = new SessionManager();
+                sessionManager.InitializeUserSession(userInfo.UserId);
+
+                RedirectBasedOnRole();
             }
             else
             {
-                ShowErrorMessage(userInfo.Message ?? "Invalid login attempt");
+                ShowErrorMessage(userInfo.Message ?? "Invalid username/email or password");
+            }
+        }
+
+        private void RedirectBasedOnRole()
+        {
+            if (Session["RoleName"] == null) return;
+
+            switch (Session["RoleName"].ToString().ToLower())
+            {
+                case "student":
+                    Response.Redirect("~/Pages/Applicant/Dashboard/UserDash.aspx", false);
+                    break;
+                case "admin":
+                    Response.Redirect("~/Pages/Admin/AdminDash/AdminDash.aspx", false);
+                    break;
+                default:
+                    ShowErrorMessage("Your account type doesn't have an assigned dashboard");
+                    break;
             }
         }
 

@@ -191,6 +191,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\SessionManager.cs" />
     <Compile Include="Classes\Universities.cs" />
     <Compile Include="Classes\UserManagement.cs" />
     <Compile Include="Pages\AboutUs\AboutUs.aspx.cs">
