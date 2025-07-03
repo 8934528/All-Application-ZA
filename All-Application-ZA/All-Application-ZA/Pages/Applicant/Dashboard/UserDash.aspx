@@ -16,14 +16,13 @@
         <!-- User Header Section -->
         <header class="user-header animate__animated animate__fadeInDown">
             <div class="logo-container">
-                <img src="../../../Assets/Images/logo.png" alt="All-Application-ZA Logo" class="logo" />
-                <h1>All-Application-ZA</h1>
+                <img src="../../../Assets/Images/za.png" alt="All-Application-ZA Logo" class="logo" />
             </div>
             <nav class="user-nav">
                 <ul>
                     <li><a href="../Dashboard/UserDash.aspx" class="active"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="../Applications/MyApplications.aspx"><i class="fas fa-file-alt"></i> My Applications</a></li>
-                    <li><a href="../Profile/UserProfile.aspx"><i class="fas fa-user-circle"></i> User Name</a></li>
+                    <li><a href="../Profile/UserProfile.aspx"><i class="fas fa-user-circle"></i> User Profile</a></li>
                     <li><a href="../Notifications/Notifications.aspx"><i class="fas fa-bell"></i> Notifications</a></li>
                     <li><a href="../../../Pages/Login/Login.aspx"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
                 </ul>
@@ -57,7 +56,7 @@
                 </div>
             </div>
             <div class="welcome-illustration">
-                <img src="../../../Assets/Images/student_illustration.jpg" alt="Student Illustration" />
+                <img src="../../../Assets/Images/student_illustration.jpeg" alt="Student Illustration" />
             </div>
         </section>
 
@@ -96,7 +95,7 @@
                 <!-- University of Cape Town -->
                 <div class="university-card animate__animated animate__fadeInUp" data-province="WC" data-status="Open">
                     <div class="card-header">
-                        <img src="../../../Assets/Images/uctlogo.jpg" alt="UCT Logo" />
+                        <img src="../../../Assets/Images/uct.jpeg" alt="UCT Logo" />
                         <span class="status-badge open">Open</span>
                     </div>
                     <div class="card-body">
@@ -113,7 +112,7 @@
                 <!-- University of Pretoria -->
                 <div class="university-card animate__animated animate__fadeInUp" data-province="GP" data-status="Open" style="animation-delay: 0.1s">
                     <div class="card-header">
-                        <img src="../../../Assets/Images/uplogo.jpg" alt="UP Logo" />
+                        <img src="../../../Assets/Images/up.png" alt="UP Logo" />
                         <span class="status-badge open">Open</span>
                     </div>
                     <div class="card-body">
@@ -130,7 +129,7 @@
                 <!-- Stellenbosch University -->
                 <div class="university-card animate__animated animate__fadeInUp" data-province="WC" data-status="Open" style="animation-delay: 0.2s">
                     <div class="card-header">
-                        <img src="../../../Assets/Images/uslogo.jpg" alt="Stellenbosch Logo" />
+                        <img src="../../../Assets/Images/su.jpeg" alt="Stellenbosch Logo" />
                         <span class="status-badge open">Open</span>
                     </div>
                     <div class="card-body">
@@ -147,7 +146,7 @@
                 <!-- University of Johannesburg -->
                 <div class="university-card animate__animated animate__fadeInUp" data-province="GP" data-status="Closed" style="animation-delay: 0.3s">
                     <div class="card-header">
-                        <img src="../../../Assets/Images/ujlogo.jpg" alt="UJ Logo" />
+                        <img src="../../../Assets/Images/ujlogo.png" alt="UJ Logo" />
                         <span class="status-badge closed">Closed</span>
                     </div>
                     <div class="card-body">
@@ -164,7 +163,7 @@
                 <!-- University of KwaZulu-Natal -->
                 <div class="university-card animate__animated animate__fadeInUp" data-province="KZN" data-status="Open" style="animation-delay: 0.4s">
                     <div class="card-header">
-                        <img src="../../../Assets/Images/ukznlogo.jpg" alt="UKZN Logo" />
+                        <img src="../../../Assets/Images/ukzn.png" alt="UKZN Logo" />
                         <span class="status-badge open">Open</span>
                     </div>
                     <div class="card-body">
@@ -181,7 +180,7 @@
                 <!-- University of the Free State -->
                 <div class="university-card animate__animated animate__fadeInUp" data-province="FS" data-status="Open" style="animation-delay: 0.5s">
                     <div class="card-header">
-                        <img src="../../../Assets/Images/ufs.jpg" alt="UFS Logo" />
+                        <img src="../../../Assets/Images/ufs.png" alt="UFS Logo" />
                         <span class="status-badge open">Open</span>
                     </div>
                     <div class="card-body">
@@ -198,7 +197,7 @@
                 <!-- North-West University -->
                 <div class="university-card animate__animated animate__fadeInUp" data-province="NW" data-status="Open" style="animation-delay: 0.6s">
                     <div class="card-header">
-                        <img src="../../../Assets/Images/nwulogo.jpg" alt="NWU Logo" />
+                        <img src="../../../Assets/Images/nwu.png" alt="NWU Logo" />
                         <span class="status-badge open">Open</span>
                     </div>
                     <div class="card-body">
@@ -215,7 +214,7 @@
                 <!-- Rhodes University -->
                 <div class="university-card animate__animated animate__fadeInUp" data-province="EC" data-status="Open" style="animation-delay: 0.7s">
                     <div class="card-header">
-                        <img src="../../../Assets/Images/rhodeslogo.png" alt="Rhodes Logo" />
+                        <img src="../../../Assets/Images/ru.png" alt="Rhodes Logo" />
                         <span class="status-badge open">Open</span>
                     </div>
                     <div class="card-body">
@@ -232,7 +231,7 @@
                 <!-- University of Fort Hare -->
                 <div class="university-card animate__animated animate__fadeInUp" data-province="EC" data-status="Open" style="animation-delay: 0.8s">
                     <div class="card-header">
-                        <img src="../../../Assets/Images/ufhlogo.png" alt="UFH Logo" />
+                        <img src="../../../Assets/Images/ufh.png" alt="UFH Logo" />
                         <span class="status-badge open">Open</span>
                     </div>
                     <div class="card-body">
@@ -249,7 +248,7 @@
                 <!-- Durban University of Technology -->
                 <div class="university-card animate__animated animate__fadeInUp" data-province="KZN" data-status="Open" style="animation-delay: 0.9s">
                     <div class="card-header">
-                        <img src="../../../Assets/Images/dutlogo.jpg" alt="DUT Logo" />
+                        <img src="../../../Assets/Images/dut.png" alt="DUT Logo" />
                         <span class="status-badge open">Open</span>
                     </div>
                     <div class="card-body">
@@ -266,7 +265,7 @@
                 <!-- Tshwane University of Technology -->
                 <div class="university-card animate__animated animate__fadeInUp" data-province="GP" data-status="Open" style="animation-delay: 1.0s">
                     <div class="card-header">
-                        <img src="../../../Assets/Images/tutlogo.jpg" alt="TUT Logo" />
+                        <img src="../../../Assets/Images/tut.png" alt="TUT Logo" />
                         <span class="status-badge open">Open</span>
                     </div>
                     <div class="card-body">
@@ -283,7 +282,7 @@
                 <!-- Cape Peninsula University of Technology -->
                 <div class="university-card animate__animated animate__fadeInUp" data-province="WC" data-status="Open" style="animation-delay: 1.1s">
                     <div class="card-header">
-                        <img src="../../../Assets/Images/cputlogo.jpg" alt="CPUT Logo" />
+                        <img src="../../../Assets/Images/cput.jpg" alt="CPUT Logo" />
                         <span class="status-badge open">Open</span>
                     </div>
                     <div class="card-body">
@@ -300,7 +299,7 @@
                 <!-- University of Limpopo -->
                 <div class="university-card animate__animated animate__fadeInUp" data-province="LP" data-status="Open" style="animation-delay: 1.2s">
                     <div class="card-header">
-                        <img src="../../../Assets/Images/ullogo.jpg" alt="UL Logo" />
+                        <img src="../../../Assets/Images/ul.jpeg" alt="UL Logo" />
                         <span class="status-badge open">Open</span>
                     </div>
                     <div class="card-body">
@@ -317,7 +316,7 @@
                 <!-- University of South Africa -->
                 <div class="university-card animate__animated animate__fadeInUp" data-province="GP" data-status="Open" style="animation-delay: 1.3s">
                     <div class="card-header">
-                        <img src="../../../Assets/Images/unisalogo.jpg" alt="UNISA Logo" />
+                        <img src="../../../Assets/Images/unisa.jpg" alt="UNISA Logo" />
                         <span class="status-badge open">Open</span>
                     </div>
                     <div class="card-body">
@@ -334,7 +333,7 @@
                 <!-- University of the Witwatersrand -->
                 <div class="university-card animate__animated animate__fadeInUp" data-province="GP" data-status="Open" style="animation-delay: 1.4s">
                     <div class="card-header">
-                        <img src="../../../Assets/Images/witslogo.jpg" alt="Wits Logo" />
+                        <img src="../../../Assets/Images/wits.png" alt="Wits Logo" />
                         <span class="status-badge open">Open</span>
                     </div>
                     <div class="card-body">
@@ -351,7 +350,7 @@
                 <!-- Central University of Technology -->
                 <div class="university-card animate__animated animate__fadeInUp" data-province="FS" data-status="Open" style="animation-delay: 1.5s">
                     <div class="card-header">
-                        <img src="../../../Assets/Images/cutlogo.png" alt="CUT Logo" />
+                        <img src="../../../Assets/Images/cut.png" alt="CUT Logo" />
                         <span class="status-badge open">Open</span>
                     </div>
                     <div class="card-body">
@@ -368,7 +367,7 @@
                 <!-- Nelson Mandela University -->
                 <div class="university-card animate__animated animate__fadeInUp" data-province="EC" data-status="Open" style="animation-delay: 1.6s">
                     <div class="card-header">
-                        <img src="../../../Assets/Images/nmulogo.jpg" alt="NMU Logo" />
+                        <img src="../../../Assets/Images/nmu.png" alt="NMU Logo" />
                         <span class="status-badge open">Open</span>
                     </div>
                     <div class="card-body">
@@ -385,7 +384,7 @@
                 <!-- Mangosuthu University of Technology -->
                 <div class="university-card animate__animated animate__fadeInUp" data-province="KZN" data-status="Open" style="animation-delay: 1.7s">
                     <div class="card-header">
-                        <img src="../../../Assets/Images/mutlogo.png" alt="MUT Logo" />
+                        <img src="../../../Assets/Images/mut.png" alt="MUT Logo" />
                         <span class="status-badge open">Open</span>
                     </div>
                     <div class="card-body">
@@ -402,7 +401,7 @@
                 <!-- University of Venda -->
                 <div class="university-card animate__animated animate__fadeInUp" data-province="LP" data-status="Open" style="animation-delay: 1.8s">
                     <div class="card-header">
-                        <img src="../../../Assets/Images/univenlogo.jpg" alt="Univen Logo" />
+                        <img src="../../../Assets/Images/univen.jpg" alt="Univen Logo" />
                         <span class="status-badge open">Open</span>
                     </div>
                     <div class="card-body">
@@ -419,7 +418,7 @@
                 <!-- University of Mpumalanga -->
                 <div class="university-card animate__animated animate__fadeInUp" data-province="MP" data-status="Open" style="animation-delay: 1.9s">
                     <div class="card-header">
-                        <img src="../../../Assets/Images/umplogo.jpg" alt="UMP Logo" />
+                        <img src="../../../Assets/Images/ump.png" alt="UMP Logo" />
                         <span class="status-badge open">Open</span>
                     </div>
                     <div class="card-body">
@@ -436,7 +435,7 @@
                 <!-- Sol Plaatje University -->
                 <div class="university-card animate__animated animate__fadeInUp" data-province="NC" data-status="Open" style="animation-delay: 2.0s">
                     <div class="card-header">
-                        <img src="../../../Assets/Images/spulogo.png" alt="SPU Logo" />
+                        <img src="../../../Assets/Images/spu.png" alt="SPU Logo" />
                         <span class="status-badge open">Open</span>
                     </div>
                     <div class="card-body">
@@ -453,7 +452,7 @@
                 <!-- Vaal University of Technology -->
                 <div class="university-card animate__animated animate__fadeInUp" data-province="GP" data-status="Open" style="animation-delay: 2.1s">
                     <div class="card-header">
-                        <img src="../../../Assets/Images/vutlogo.jpg" alt="VUT Logo" />
+                        <img src="../../../Assets/Images/vut.jpeg" alt="VUT Logo" />
                         <span class="status-badge open">Open</span>
                     </div>
                     <div class="card-body">
@@ -470,7 +469,7 @@
                 <!-- Walter Sisulu University -->
                 <div class="university-card animate__animated animate__fadeInUp" data-province="EC" data-status="Open" style="animation-delay: 2.2s">
                     <div class="card-header">
-                        <img src="../../../Assets/Images/wsulogo.png" alt="WSU Logo" />
+                        <img src="../../../Assets/Images/wsu.png" alt="WSU Logo" />
                         <span class="status-badge open">Open</span>
                     </div>
                     <div class="card-body">

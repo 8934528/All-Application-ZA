@@ -16,14 +16,13 @@
         <!-- User Header Section -->
         <header class="user-header">
             <div class="logo-container">
-                <img src="../../../Assets/Images/logo.png" alt="All-Application-ZA Logo" class="logo" />
-                <h1>All-Application-ZA</h1>
+                <img src="../../../Assets/Images/za.png" alt="All-Application-ZA Logo" class="logo" />
             </div>
             <nav class="user-nav">
                 <ul>
                     <li><a href="../Dashboard/UserDash.aspx"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="MyApplications.aspx" class="active"><i class="fas fa-file-alt"></i> My Applications</a></li>
-                    <li><a href="../Profile/UserProfile.aspx"><i class="fas fa-user-circle"></i> User Name</a></li>
+                    <li><a href="../Profile/UserProfile.aspx"><i class="fas fa-user-circle"></i> User Profile</a></li>
                     <li><a href="../Notifications/Notifications.aspx"><i class="fas fa-bell"></i> Notifications</a></li>
                     <li><a href="../../../Pages/Login/Login.aspx"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
                 </ul>
@@ -55,7 +54,7 @@
                 <div class="application-card submitted">
                     <div class="card-header">
                         <div class="university-info">
-                            <img src="../../../Assets/Images/uctlogo.jpg" alt="UCT Logo" class="university-logo" />
+                            <img src="../../../Assets/Images/uct.jpeg" alt="UCT Logo" class="university-logo" />
                             <div>
                                 <h3>University of Cape Town</h3>
                                 <p>Bachelor of Science in Computer Science</p>
@@ -89,7 +88,7 @@
                 <div class="application-card processing">
                     <div class="card-header">
                         <div class="university-info">
-                            <img src="../../../Assets/Images/uplogo.jpg" alt="UP Logo" class="university-logo" />
+                            <img src="../../../Assets/Images/up.png" alt="UP Logo" class="university-logo" />
                             <div>
                                 <h3>University of Pretoria</h3>
                                 <p>Bachelor of Engineering (Computer Engineering)</p>
@@ -123,7 +122,7 @@
                 <div class="application-card accepted">
                     <div class="card-header">
                         <div class="university-info">
-                            <img src="../../../Assets/Images/witslogo.jpg" alt="Wits Logo" class="university-logo" />
+                            <img src="../../../Assets/Images/wits.png" alt="Wits Logo" class="university-logo" />
                             <div>
                                 <h3>University of the Witwatersrand</h3>
                                 <p>Bachelor of Science in Data Science</p>
@@ -162,7 +161,7 @@
                 <div class="application-card waitlisted">
                     <div class="card-header">
                         <div class="university-info">
-                            <img src="../../../Assets/Images/ukznlogo.jpg" alt="UKZN Logo" class="university-logo" />
+                            <img src="../../../Assets/Images/ukzn.png" alt="UKZN Logo" class="university-logo" />
                             <div>
                                 <h3>University of KwaZulu-Natal</h3>
                                 <p>Bachelor of Medical Science</p>

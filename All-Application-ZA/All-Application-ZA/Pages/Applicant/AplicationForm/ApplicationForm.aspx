@@ -15,8 +15,7 @@
         <!-- User Header with Navigation -->
         <header class="user-header animate__animated animate__fadeInDown">
             <div class="logo-container">
-                <img src="../../../Assets/Images/logo.png" alt="All-Application-ZA Logo" class="logo" />
-                <h1>All-Application-ZA</h1>
+                <img src="../../../Assets/Images/za.png" alt="All-Application-ZA Logo" class="logo" />
             </div>
             <nav class="user-nav">
                 <ul>

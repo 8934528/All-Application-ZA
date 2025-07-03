@@ -15,14 +15,13 @@
         <!-- User Header Section -->
         <header class="user-header">
             <div class="logo-container">
-                <img src="../../../Assets/Images/logo.png" alt="All-Application-ZA Logo" class="logo" />
-                <h1>All-Application-ZA</h1>
+                <img src="../../../Assets/Images/za.png" alt="All-Application-ZA Logo" class="logo" />
             </div>
             <nav class="user-nav">
                 <ul>
                     <li><a href="../Dashboard/UserDash.aspx"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="../Applications/MyApplications.aspx"><i class="fas fa-file-alt"></i> My Applications</a></li>
-                    <li><a href="../Profile/UserProfile.aspx"><i class="fas fa-user-circle"></i> User Name</a></li>
+                    <li><a href="../Profile/UserProfile.aspx"><i class="fas fa-user-circle"></i> User Profile</a></li>
                     <li><a href="Notifications.aspx" class="active"><i class="fas fa-bell"></i> Notifications</a></li>
                     <li><a href="../../../Pages/Login/Login.aspx"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
                 </ul>

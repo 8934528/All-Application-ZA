@@ -89,6 +89,7 @@
     <Content Include="Assets\Images\ru.png" />
     <Content Include="Assets\Images\spu.png" />
     <Content Include="Assets\Images\spulogo.png" />
+    <Content Include="Assets\Images\student_illustration.jpeg" />
     <Content Include="Assets\Images\student_illustration.jpg" />
     <Content Include="Assets\Images\su.jpeg" />
     <Content Include="Assets\Images\tut.png" />
