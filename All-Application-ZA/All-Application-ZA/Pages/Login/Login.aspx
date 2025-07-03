@@ -62,7 +62,7 @@
         </header>
 
         <!-- Main Content -->
-        <main class="container-fluid py-5">
+        <main class="container-fluid py-2">
             <div class="row align-items-center">
                 <!-- Login Form Column -->
                 <div class="col-lg-6 mb-5 mb-lg-0">
@@ -75,7 +75,7 @@
                                 <asp:Label ID="lblUsername" runat="server" AssociatedControlID="txtUsername" CssClass="form-label">Username or Email</asp:Label>
                                 <div class="input-group">
                                     <span class="input-group-text"><i class="fi fi-rr-user"></i></span>
-                                    <asp:TextBox ID="txtUsername" runat="server" CssClass="form-control" required></asp:TextBox>
+                                    <asp:TextBox ID="txtUsername" runat="server" CssClass="form-control" required="true"></asp:TextBox>
                                 </div>
                                 <div class="underline"></div>
                                 <span class="validation-error" id="usernameError"></span>
@@ -85,7 +85,7 @@
                                 <asp:Label ID="lblPassword" runat="server" AssociatedControlControlID="txtPassword" CssClass="form-label">Password</asp:Label>
                                 <div class="input-group">
                                     <span class="input-group-text"><i class="fi fi-rr-lock"></i></span>
-                                    <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" TextMode="Password" required></asp:TextBox>
+                                    <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" TextMode="Password" required="true"></asp:TextBox>
                                 </div>
                                 <div class="underline"></div>
                                 <span class="validation-error" id="passwordError"></span>
