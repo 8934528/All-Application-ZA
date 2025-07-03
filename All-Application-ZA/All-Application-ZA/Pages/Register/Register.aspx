@@ -151,8 +151,8 @@
                     </div>
                 </div>
 
-                <div class="submit-btn-container">
-                    <asp:Button ID="btnRegister" runat="server" Text="Create Account" CssClass="submit-btn" OnClientClick="return validateRegisterForm();" />
+                <div class="submit-btn-container">                    
+                    <asp:Button ID="btnRegister" runat="server" Text="Create Account" CssClass="submit-btn" OnClick="btnRegister_Click"/>
                     <i class="fas fa-user-plus submit-icon"></i>
                 </div>
             </div>

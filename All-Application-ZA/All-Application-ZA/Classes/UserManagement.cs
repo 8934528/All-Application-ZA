@@ -10,7 +10,6 @@ using System.Text;
 
 namespace All_Application_ZA.Classes
 {
-
     public class UserManagement
     {
         private readonly string connectionString;
@@ -40,7 +39,7 @@ namespace All_Application_ZA.Classes
                                       string province, string postalCode, string currentSchool,
                                       string yearOfStudy, string bio)
         {
-            var result = new UserInfo();
+            UserInfo result = new UserInfo();
 
             if (IsUsernameTaken(username))
             {
@@ -136,7 +135,7 @@ namespace All_Application_ZA.Classes
         // Authenticate user (both student and admin)
         public UserInfo AuthenticateUser(string usernameOrEmail, string password)
         {
-            var result = new UserInfo();
+            UserInfo result = new UserInfo();
             string passwordHash = HashPassword(password);
 
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -251,3 +250,4 @@ namespace All_Application_ZA.Classes
         }
     }
 }
+
